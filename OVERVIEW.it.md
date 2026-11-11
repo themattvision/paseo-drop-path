@@ -1,0 +1,5 @@
+Quando trascini un file o una cartella dal Mac sul campo messaggio di una chat, Paseo di solito lo carica sul daemon, e con file grandi o cartelle intere ci vuole molto. Questo plugin salta il caricamento e scrive nel messaggio il percorso locale, così l'agente legge direttamente dal disco.
+
+Funziona nell'app desktop, con uno o più elementi trascinati insieme. I percorsi con spazi vengono messi tra virgolette doppie. Il terminale, l'esplora file e la vista file mantengono il comportamento normale. Se Paseo non riesce a ricavare il percorso di un elemento, il plugin non fa nulla e avviene il solito caricamento.
+
+Il percorso inserito è quello del computer su cui gira l'app. Se la chat è su un altro host, per esempio un server remoto, quel percorso non esiste lì e l'agente non può aprirlo. Il plugin non legge né invia il contenuto dei file: usa solo il percorso. Trova il campo messaggio dalla struttura della pagina, quindi un aggiornamento di Paseo che la cambia può impedirgli di inserire il testo.

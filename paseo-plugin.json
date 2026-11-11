@@ -1,6 +1,13 @@
 {
   "id": "paseo-drop-path",
-  "$comment": "Add \"name\": \"My plugin\" to set a display name. Add \"icon\": \"assets/icon.png\" for a PNG inside the package. Add image or video paths (relative to this manifest) or HTTPS URLs to media. Include local assets in package.json files.",
+  "name": "Drop path",
+  "description": "Dragging a file or folder onto the message box inserts its local path instead of uploading it.",
+  "translations": {
+    "it": {
+      "name": "Drop path",
+      "description": "Trascinando un file o una cartella sul campo messaggio inserisce il percorso locale invece di caricarlo."
+    }
+  },
   "media": [],
   "requirements": {
     "paseo": ">=0.13.0"
